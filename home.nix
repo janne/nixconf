@@ -17,8 +17,8 @@
   home.packages = with pkgs; [
     # Programming
     nixpkgs-fmt
-    nodejs_18
     cmake
+    jq
 
     # Mac Apps
     spotify
