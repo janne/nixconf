@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-{
+{ pkgs, ... }: {
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -16,9 +15,6 @@
       set incsearch
       set linebreak
     '';
-    plugins = with pkgs.vimPlugins; [
-      vim-surround
-      nerdtree
-    ];
+    plugins = with pkgs.vimPlugins; [ vim-surround nerdtree ];
   };
 }

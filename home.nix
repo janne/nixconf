@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-{
+{ pkgs, ... }: {
   home.username = "janandersson";
   home.homeDirectory = "/Users/janandersson";
 
@@ -16,7 +15,6 @@
   # environment.
   home.packages = with pkgs; [
     # Programming
-    nixpkgs-fmt
     cmake
     jq
 
@@ -28,6 +26,10 @@
 
     # CLI utils
     tree
+
+    # Neovim
+    nixd
+    nixfmt
 
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
@@ -70,5 +72,3 @@
 
   programs.vscode.enable = true;
 }
-
-
