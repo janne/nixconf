@@ -17,6 +17,7 @@
     # Programming
     cmake
     jq
+    pnpm
 
     # Mac Apps
     spotify
