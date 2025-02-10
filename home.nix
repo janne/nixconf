@@ -27,6 +27,7 @@
 
     # CLI utils
     tree
+    ollama
 
     # Neovim
     nixd
