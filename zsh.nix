@@ -8,8 +8,7 @@
     shellAliases = {
       jumphost =
         "gcloud compute ssh jumphost1 --project soundtrap-anthos --zone us-central1-a --tunnel-through-iap -- -oServerAliveInterval=60 -oTCPKeepAlive=yes";
-      jump-proxy =
-        "gcloud compute ssh jumphost1 - -project soundtrap-anthos - -zone us-central1-a - -tunnel-through-iap - - -L 8888:localhost:8888 -N -oServerAliveInterval=60 -oTCPKeepAlive=yes";
+        jump-proxy = "gcloud compute ssh jumphost1 --project soundtrap-anthos --zone us-central1-a --tunnel-through-iap -- -L 8888:localhost:8888 -N -oServerAliveInterval=60 -oTCPKeepAlive=yes";
       k = "HTTPS_PROXY=localhost:8888 kubectl";
       deeplink_ios =
         "xcrun simctl openurl booted"; # deeplinks such as "com.soundtrap.studioapp://pricing"
