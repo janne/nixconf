@@ -18,6 +18,7 @@
     cmake
     jq
     pnpm
+    lcov
 
     # Mac Apps
     spotify
