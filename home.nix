@@ -17,11 +17,8 @@
     # Programming
     cmake
     jq
-    pnpm
     lcov
-
-    # Mac Apps
-    spotify
+    lua
 
     # Fonts
     nerd-fonts.fira-code
@@ -69,6 +66,7 @@
     "$HOME/src/studio/modules/acp_morothead/morothead_git/build-flatbuffers" # Moröthead
     "/Applications/IntelliJ IDEA CE.app/Contents/MacOS" # IntelliJ idea CLI command
     "/opt/homebrew/opt/mysql-client@8.4/bin" # mysql CLI command
+    "/Applications/love.app/Contents/MacOS" # Love
   ];
 
   programs.home-manager.enable = true;
